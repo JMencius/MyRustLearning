@@ -39,8 +39,14 @@ fn main() {
     println!("arr : {:?}", arr_item);
     println!("tup : {:?}", tup_item);
 
+    // copy
     let a = 3;
     let b = a;
     println!("{a}");
 
+    // move
+    let string_item = String::from("aa");
+    let string_item_tt = string_item;
+    // println!("{string_item}"); // value borrowed here after move
+    
 }

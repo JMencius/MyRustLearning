@@ -15,5 +15,7 @@ fn main() {
         MY_MUT_STATIC = 32;
         println!("{MY_MUT_STATIC}");
     }
+    // Can not print MY_MUT_STATIC outside of unsafe
+    // println!("{MY_MUT_STATIC}");
     
 }
